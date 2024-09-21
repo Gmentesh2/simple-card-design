@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: inter-regular;
+    src: url("./assets/fonts/static/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: inter-bold;
+    src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+@font-face {
+    font-family: inter-semiBold;
+    src: url("./assets/fonts/static/Inter-SemiBold.ttf");
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    width: 320px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 11px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.card h1{
+    font-family: inter-semiBold;
+    font-size: 26px;
+    color: hsl(0, 0%, 100%); 
+    padding-top: 25px;
+}
+.card h3 {
+    font-family: inter-bold;
+    font-size: 13px;
+    color: hsl(75, 94%, 57%);
+    padding-top: 5px;
+}
+.card p{ 
+    font-family: inter-regular;
+    color:hsl(0, 0%, 100%);
+    font-size: 12px;
+    padding-top: 20px;
+}
+.btn-div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 14px;
+    width: 100%;
+    align-items: center;
+}
+.btn-div button {
+    width: 80%;
+    height: 38px;
+    border-radius: 7px;
+    border: none;
+    font-family: inter-bold;
+    background-color: hsl(0, 0%, 20%);
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+
+}
+.btn-div button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+    transition: all 0.3s ease;
+}
